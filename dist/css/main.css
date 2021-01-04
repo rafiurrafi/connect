@@ -65,6 +65,19 @@ body {
   margin-left: 2rem;
 }
 
+.gallery {
+  display: flex;
+  height: 45vh;
+  background-color: #000;
+}
+
+.gallery__img {
+  object-fit: cover;
+  width: 33.3%;
+  height: 100%;
+  opacity: 0.7;
+}
+
 .input {
   padding: 2rem 3.5rem;
   width: 100%;
