@@ -1,0 +1,77 @@
+.header {
+  &__top {
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo-box {
+      width: 34rem;
+    }
+    &-logo {
+      width: 100%;
+    }
+    &-link:link,
+    &-link:visited {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $link-color;
+      border: 2px solid $link-color;
+      border-radius: 5px;
+      padding: 1rem 2rem;
+      font-size: $font-size-2;
+      font-family: "proxima nova";
+      font-weight: 700;
+      margin-left: 1rem;
+      transition: all 0.4s;
+      &:hover {
+        background-color: $hover-color;
+        border: 2px solid $hover-color;
+        color: #fff;
+      }
+    }
+  }
+  &__bottom {
+    background-color: $default-color;
+    text-align: center;
+    &-link {
+      transition: all 0.3s;
+      &:link,
+      &:visited {
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-white;
+        display: inline-block;
+        padding: 4rem;
+        font-size: $font-size-1;
+      }
+      &--1 {
+        &:hover {
+          background-color: $medical-color;
+        }
+      }
+      &--2 {
+        &:hover {
+          background-color: $engineering-color;
+        }
+      }
+      &--3 {
+        &:hover {
+          background-color: $personnel-color;
+        }
+      }
+    }
+
+    &-link:nth-child(even) {
+      width: 40%;
+    }
+    &-link:nth-child(odd) {
+      width: 29.5%;
+    }
+  }
+  .row {
+    margin-bottom: 0;
+  }
+}
