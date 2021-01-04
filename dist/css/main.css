@@ -34,7 +34,6 @@ html {
 body {
   font-family: "proxima nova";
   font-weight: 400;
-  line-height: 1.6;
 }
 
 .heading-primary {
@@ -47,6 +46,13 @@ body {
 
 .heading-primary span {
   font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 5.4rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "proxima nova";
 }
 
 .heading-tertiary {
@@ -64,13 +70,19 @@ body {
   color: #615b9b;
   cursor: pointer;
   margin-bottom: 3rem;
-  line-height: 1.1;
 }
 
 .heading-penta {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.copy-text {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  margin-bottom: 4rem;
 }
 
 .text-center {
@@ -410,5 +422,57 @@ body {
   left: 0;
   top: 5%;
   opacity: 0.6;
+}
+
+.section-group {
+  height: 87rem;
+  position: relative;
+}
+
+.section-group__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-group .heading-primary {
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+.section-group .group {
+  background-color: #615b9b;
+  width: 45vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 75rem;
+  padding: 7rem 8rem;
+}
+
+.section-group .copy-text {
+  color: #fff;
+}
+
+.section-refer {
+  padding: 12.5rem;
+}
+
+.section-refer .copy-text {
+  color: #4f5b60;
+}
+
+.section-refer .heading-secondary {
+  margin-bottom: 3rem;
+}
+
+.section-refer a {
+  margin-left: 0 !important;
+}
+
+.section-refer .refer__img {
+  height: 47rem;
+  width: 100%;
+  object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

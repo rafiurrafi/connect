@@ -28,3 +28,45 @@
     opacity: 0.6;
   }
 }
+.section-group {
+  height: 87rem;
+  position: relative;
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .heading-primary {
+    line-height: 1;
+    margin-bottom: 4rem;
+  }
+  .group {
+    background-color: $link-color;
+    width: 45vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 75rem;
+    padding: 7rem 8rem;
+  }
+  .copy-text {
+    color: $color-white;
+  }
+}
+.section-refer {
+  padding: 12.5rem;
+  .copy-text {
+    color: #4f5b60;
+  }
+  .heading-secondary {
+    margin-bottom: 3rem;
+  }
+  a {
+    margin-left: 0 !important;
+  }
+  .refer__img {
+    height: 47rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}

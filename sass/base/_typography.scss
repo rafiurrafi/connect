@@ -8,6 +8,12 @@
     font-weight: 700;
   }
 }
+.heading-secondary {
+  font-size: 5.4rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "proxima nova";
+}
 .heading-tertiary {
   font-size: 4rem;
   font-family: "proxima nova";
@@ -22,10 +28,15 @@
   color: $link-color;
   cursor: pointer;
   margin-bottom: 3rem;
-  line-height: 1.1;
 }
 .heading-penta {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
+}
+.copy-text {
+  font-weight: 400;
+  font-size: $font-size-1;
+  line-height: 1.4;
+  margin-bottom: 4rem;
 }
