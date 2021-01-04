@@ -1,0 +1,23 @@
+.role {
+  margin-top: 7rem;
+  background-color: $color-white;
+  padding: 2rem 2.5rem;
+  height: 46rem;
+  border-radius: 1rem;
+  position: relative;
+  .heading-penta {
+    margin-bottom: 4.5rem;
+  }
+  &__meta {
+    font-weight: 700;
+    opacity: 0.8;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  &__text {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+}

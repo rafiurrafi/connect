@@ -9,7 +9,22 @@
     z-index: 1;
     left: 0;
     bottom: -40%;
-    opacity: 0.2;
+    opacity: 0.35;
     filter: invert(-80%);
+  }
+}
+.section-feature {
+  display: flex;
+}
+.section-role {
+  background-color: #f5f4fc;
+  padding: 8rem 0;
+  position: relative;
+  &__img {
+    position: absolute;
+    width: 39rem;
+    left: 0;
+    top: 5%;
+    opacity: 0.6;
   }
 }

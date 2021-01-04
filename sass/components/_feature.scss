@@ -1,0 +1,36 @@
+.feature {
+  width: 33.3%;
+  height: 57rem;
+  color: $color-white;
+  padding: 9rem 6rem 6rem 6rem;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  &__text {
+    font-size: $font-size-3;
+    font-weight: 100;
+    line-height: 1.4;
+  }
+  &__img {
+    display: inline-block;
+    height: 20rem;
+    position: absolute;
+    right: -5%;
+    bottom: 3%;
+    filter: invert(85%);
+    opacity: 0.3;
+  }
+  &__btn {
+    position: absolute;
+    bottom: 10%;
+  }
+  &-medical {
+    background-color: $medical-color;
+  }
+  &-engineering {
+    background-color: $engineering-color;
+  }
+  &-consulting {
+    background-color: $personnel-color;
+  }
+}
