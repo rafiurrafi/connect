@@ -5,6 +5,9 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    @include respond(tab-port) {
+      padding: 2.5rem 2%;
+    }
     &-menu {
       .jobs {
         position: absolute;
@@ -15,6 +18,12 @@
         opacity: 0;
         visibility: hidden;
         transition: all 0.5s;
+        @include respond(tab-port) {
+          width: 100vw;
+          bottom: -215%;
+          padding: 4rem;
+          right: 0%;
+        }
       }
     }
     &-logo-box {
@@ -42,15 +51,34 @@
         border: 2px solid $hover-color;
         color: #fff;
       }
-      &:last-of-type:hover + .jobs {
-        opacity: 1;
-        visibility: visible;
+      // &:last-of-type:hover + .jobs {
+      //   opacity: 1;
+      //   visibility: visible;
+      // }
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+    &-phone {
+      display: none;
+      @include respond(tab-port) {
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        font-size: $font-size-3;
+        display: inline-block;
+        margin-left: 2rem;
+        color: $link-color;
       }
     }
   }
   &__bottom {
     background-color: $default-color;
     text-align: center;
+    @include respond(tab-port) {
+      display: none;
+    }
     &-link {
       transition: all 0.3s;
       &:link,
@@ -61,7 +89,7 @@
         text-transform: uppercase;
         color: $color-white;
         display: inline-block;
-        padding: 4rem;
+        padding: 4rem 0;
         font-size: $font-size-1;
       }
       &--1 {
@@ -83,12 +111,19 @@
 
     &-link:nth-child(even) {
       width: 40%;
+      @include respond(tab-land) {
+        width: 46%;
+      }
     }
     &-link:nth-child(odd) {
       width: 29.5%;
+      @include respond(tab-land) {
+        width: 26.5%;
+      }
     }
   }
   .row {
     margin-bottom: 0;
+    padding: 0;
   }
 }

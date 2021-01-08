@@ -1,0 +1,42 @@
+.phone-menu {
+  padding: 5rem 0;
+  // height: 0;
+  // width: 0;
+  background-color: $default-color;
+  position: absolute;
+  top: 0;
+  right: 0;
+  // opacity: 0;
+  // visibility: hidden;
+  z-index: 3;
+  transition: all 0.4s;
+  display: none;
+  height: 120vh;
+  width: 100vw;
+  &__link {
+    display: block;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $font-size-1;
+    padding: 2rem 5rem;
+  }
+  .close {
+    font-size: 4rem;
+    color: $color-white;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+.phone-menu__dropdown {
+  &-menu {
+    background-color: $dropdown-color;
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
+    transition: all 0.5s;
+  }
+}

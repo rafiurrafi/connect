@@ -2,6 +2,18 @@
   display: flex;
   height: 56rem;
   background-color: $color-dark;
+  @include respond(desktop) {
+    height: 50rem;
+  }
+  @include respond(tab-land) {
+    height: 41rem;
+  }
+  @include respond(tab-port) {
+    height: 25rem;
+  }
+  @include respond(phone) {
+    height: 18.5rem;
+  }
   &__img {
     object-fit: cover;
     width: 33.3%;
